@@ -1,4 +1,4 @@
-require('./config/config');
+const urlDB= require('./config/config');
 const express = require('express')
 const app = express();
 const mongoose = require('mongoose');
@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(require('./routes/usuario'));
 
 
-mongoose.connect(process.env.URLDB = urlDB, 
+mongoose.connect(process.env.URLDB , 
     {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true},
     (err, res) =>{
     if (err) throw err;
