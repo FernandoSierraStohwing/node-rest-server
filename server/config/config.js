@@ -32,6 +32,9 @@ process.env.SEED = process.env.SEED || 'secret-desarrollo'
 const urlDB = (process.env.NODE_ENV === 'dev') ? 'mongodb://localhost:27017/cafe' : process.env.MONGO_URI
 process.env.URLDB = urlDB;
 
+//=================
+//==GOOGLE CLIENT ID==
+//=================
 
-
+process.envCLIENT_ID = process.envCLIENT_ID || '551897572819-n0pjt2a8i4k1oeuh0k1euvqjt2cg3a8k.apps.googleusercontent.com'
 
